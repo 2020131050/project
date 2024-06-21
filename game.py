@@ -21,12 +21,12 @@ def get_guess():
     guess = guess.lower()
     return guess
 
-def play_영단어맞추기게임(word_list):
+def play_영단어맞히기게임(word_list):
     word_to_guess = get_random_word(word_list)
     guessed_letters = []
     attempts = 6
 
-    print('영단어맞추기 게임을 시작합니다.')
+    print('영단어맞히기 게임을 시작합니다.')
     print('단어는 ' + str(len(word_to_guess)) + ' 글자입니다.')
     print('남은 목숨: ' + str(attempts))
 
@@ -60,4 +60,4 @@ def play_영단어맞추기게임(word_list):
 
 if __name__ == "__main__":
     my_word_list = ['yonsei', 'seoul', 'busan', 'mathematics', 'dentisty', 'iphone', 'apple', 'watch', 'game', 'university', 'girl', 'boy', 'black']
-    play_영단어맞추기게임(my_word_list)
+    play_영단어맞히기게임(my_word_list)
