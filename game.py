@@ -38,10 +38,10 @@ def play_영단어맞히기게임(word_list):
             print('중복된 문자입니다. 목숨이 하나 줄어듭니다.')
             attempts = attempts - 1
         elif guess in word_to_guess:
-            print('맞았습니다!')
+            print('맞혔습니다!')
             guessed_letters.append(guess)
         else:
-            print('틀렸습니다.')
+            print('틀렸습니다. 목숨이 하나 줄어듭니다.')
             attempts = attempts - 1
             guessed_letters.append(guess)
         print('남은 목숨: ' + str(attempts))
@@ -52,11 +52,11 @@ def play_영단어맞히기게임(word_list):
                 all_guessed = False
 
         if all_guessed:
-            print('정답입니다!! 단어는 ' + word_to_guess + '입니다.')
+            print('YOU WIN!! 단어는 ' + word_to_guess + '입니다.')
             break
 
     if attempts == 0:
-        print('You Lose. 정답은 ' + word_to_guess + '입니다.')
+        print('You Lose.. 정답은 ' + word_to_guess + '입니다.')
 
 if __name__ == "__main__":
     my_word_list = ['yonsei', 'seoul', 'busan', 'mathematics', 'dentisty', 'iphone', 'apple', 'watch', 'game', 'university', 'girl', 'boy', 'black']
